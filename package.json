@@ -81,6 +81,7 @@
     "text-encoder-lite": "^1.0.1",
     "the-big-username-blacklist": "^1.5.1",
     "ulid": "^0.1.0",
+    "urijs": "^1.19.1",
     "uuid": "^3.0.0",
     "valid-url": "^1.0.9",
     "validator": "^10.9.0",
