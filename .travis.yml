@@ -21,10 +21,6 @@ before_install:
     ! grep '"github:' package-lock.json
 
 install:
-  - if [[ "$TRAVIS_OS_NAME" == "windows" ]]; then git config --global core.symlinks true ; fi
-  - if [[ "$TRAVIS_OS_NAME" == "windows" ]]; then git clone https://github.com/$TRAVIS_REPO_SLUG.git $TRAVIS_REPO_SLUG ; fi
-  - if [[ "$TRAVIS_OS_NAME" == "windows" ]]; then cd $TRAVIS_REPO_SLUG ; fi
-  - if [[ "$TRAVIS_OS_NAME" == "windows" ]]; then git checkout -qf $TRAVIS_COMMIT ; fi
   - npm ci
 
 script:
